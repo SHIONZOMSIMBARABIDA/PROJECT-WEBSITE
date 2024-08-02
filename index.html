@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLearn - Comprehensive Technology Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TechLearn</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#tutorials">Tutorials</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to TechLearn</h2>
+            <p>Your comprehensive guide to mastering modern technologies, from AI to Web Development.</p>
+            <button onclick="scrollToSection('technologies')">Start Learning</button>
+        </div>
+    </section>
+
+    <section id="technologies" class="section-tech">
+        <div class="container">
+            <h2>Explore Key Technologies</h2>
+            <div class="tech-overview">
+                <div class="tech-card">
+                    <h3>Artificial Intelligence (AI)</h3>
+                    <p>AI is the simulation of human intelligence in machines programmed to think like humans and mimic their actions. AI technology is used in a wide range of applications from facial recognition to self-driving cars.</p>
+                    <button onclick="toggleDetails('ai-details')">Learn More</button>
+                    <div id="ai-details" class="details">
+                        <h4>Deep Learning</h4>
+                        <p>Deep learning is a subset of AI that involves neural networks with many layers (deep networks) that analyze large amounts of data. It’s behind technologies like voice assistants and image recognition.</p>
+                        <h4>Machine Learning</h4>
+                        <p>Machine learning is an AI application that provides systems the ability to automatically learn and improve from experience without being explicitly programmed.</p>
+                        <h4>Natural Language Processing (NLP)</h4>
+                        <p>NLP allows machines to understand and respond to text or voice data in a way that is both valuable and meaningful. Examples include language translation and sentiment analysis.</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Blockchain Technology</h3>
+                    <p>Blockchain is a decentralized digital ledger that records transactions across multiple computers so that the records cannot be altered retroactively. It’s the technology behind cryptocurrencies like Bitcoin.</p>
+                    <button onclick="toggleDetails('blockchain-details')">Learn More</button>
+                    <div id="blockchain-details" class="details">
+                        <h4>Cryptocurrency</h4>
+                        <p>Cryptocurrencies are digital or virtual currencies that use cryptography for security. Bitcoin, Ethereum, and Litecoin are popular examples.</p>
+                        <h4>Smart Contracts</h4>
+                        <p>Smart contracts are self-executing contracts with the terms of the agreement directly written into code. They automatically execute actions when certain conditions are met.</p>
+                        <h4>Decentralized Finance (DeFi)</h4>
+                        <p>DeFi is a blockchain-based form of finance that doesn’t rely on central financial intermediaries such as brokerages, exchanges, or banks.</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Web Development</h3>
+                    <p>Web development involves creating websites and web applications for the internet. It covers everything from front-end design to back-end server and database management.</p>
+                    <button onclick="toggleDetails('webdev-details')">Learn More</button>
+                    <div id="webdev-details" class="details">
+                        <h4>Front-End Development</h4>
+                        <p>Front-end development focuses on what users interact with on the website. It includes technologies like HTML, CSS, and JavaScript to build responsive and interactive web pages.</p>
+                        <h4>Back-End Development</h4>
+                        <p>Back-end development is all about what happens behind the scenes of a website. It involves server-side programming, database management, and application logic using languages like Python, Ruby, or PHP.</p>
+                        <h4>Full-Stack Development</h4>
+                        <p>Full-stack developers are proficient in both front-end and back-end development. They handle the entire development process, from designing user interfaces to managing server infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tutorials" class="section-tutorials">
+        <div class="container">
+            <h2>In-Depth Tutorials</h2>
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>Machine Learning with Python</h3>
+                    <p>Master the basics of machine learning with Python. Learn how to implement machine learning algorithms using popular libraries like Scikit-learn and TensorFlow.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="tutorial-card">
+                    <h3>Building a Smart Contract with Ethereum</h3>
+                    <p>Learn how to create, deploy, and interact with smart contracts on the Ethereum blockchain. This tutorial covers Solidity programming and DApp development.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="tutorial-card">
+                    <h3>Responsive Web Design with Bootstrap</h3>
+                    <p>Get started with Bootstrap and learn how to build responsive, mobile-first websites with ease. This tutorial covers grid systems, components, and utilities.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="section-resources">
+        <div class="container">
+            <h2>Top Resources for Learning</h2>
+            <ul>
+                <li><a href="#">Comprehensive AI Courses</a></li>
+                <li><a href="#">Blockchain Certification Programs</a></li>
+                <li><a href="#">Web Development Tools and Libraries</a></li>
+                <li><a href="#">Interactive Coding Platforms</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TechLearn. All rights reserved.</p>
+            <p>Follow us on <a href="#">Twitter</a> | <a href="#">LinkedIn</a> | <a href="#">Facebook</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
